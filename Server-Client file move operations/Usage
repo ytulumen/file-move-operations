@@ -1,0 +1,7 @@
+/*##############################################################*/
+/*SYSTEM PROGRAMMING FINAL										*/
+/*Written by Yasin Tulumen 121044020							*/
+/*Last update on MAY 29, 2016									*/
+/*USAGE: ./Server <port_number> 								*/
+/*USAGE: ./Client <ip_adress> <port_number> 					*/
+/*##############################################################*/

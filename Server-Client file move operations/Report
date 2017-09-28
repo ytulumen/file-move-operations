@@ -1,0 +1,23 @@
+CSE 244 SYSTEM PROGRAMMING FINAL PROJECT REPORT
+
+author: Yasin Tulumen
+number: 121044020
+
+Start time for project: 25.05.2016 (from this date to deadline, all of days and nights worked this project[5 days and night])
+
+I can not write comment to program because I want to complete program before it, but I can not finish.
+
+--Working Mechanism--
+
+Server opens a socket and waits for clients.All clients connect one port.When client connects the server, server accepts and forks.Server writes pid information and path information to 'communicate' file and waits for a command from client.
+
+When a command came from client:
+	if command is 'listServer'; Server writes socket all of file in server's directory 			and server's subdirectory recursively. 
+	if command is 'lsClients'; Server reads all clients from 'communicate' and sends 			them to the client via socket.
+	if command is 'sendFile'; Server parses what client wrote.If filename is wrong, 			prints screen error and exits.If client id is wrong, server copies file to 			its own directory and sends information to the client.If all parameters true,		 server copies file to another client which is already client id's known.
+
+Also client process two command without using server:
+	if command is 'listLocal' ; Client prints all of file in its own directory to screen.
+	if command is 'help' ; Client prints usable commands to the screen
+
+
