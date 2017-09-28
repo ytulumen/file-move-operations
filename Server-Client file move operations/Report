@@ -5,11 +5,11 @@ number: 121044020
 
 Start time for project: 25.05.2016 (from this date to deadline, all of days and nights worked this project[5 days and night])
 
-I can not write comment to program because I want to complete program before it, but I can not finish.
+I can not write comment to program because I want to complete program before it, but I could not.
 
 --Working Mechanism--
 
-Server opens a socket and waits for clients.All clients connect one port.When client connects the server, server accepts and forks.Server writes pid information and path information to 'communicate' file and waits for a command from client.
+Server opens a socket and waits for clients.All clients connect one port.When a client connects the server, server accepts and forks.Server writes pid information and path information to 'communicate' file and waits for a command from client.
 
 When a command came from client:
 	if command is 'listServer'; Server writes socket all of file in server's directory 			and server's subdirectory recursively. 
